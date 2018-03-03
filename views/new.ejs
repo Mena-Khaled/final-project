@@ -89,43 +89,34 @@
                                    aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Category</label>
-                            <div class="input-group mb-3">
-                                <select v-model="newProfile.category" class="custom-select" id="inputGroupSelect02">
-                                    <option selected>Choose...</option>
-                                    <option value="People">People</option>
-                                    <option value="Places">Places</option>
-                                    <option value="Nature">Nature</option>
-                                    <option value="Animals">Animals</option>
-                                    <option value="Food">Food</option>
-                                    <option value="Fine Art">Fine Art</option>
-                                    <option value="Travel">Travel</option>
-                                    <option value="Fashion">Fashion</option>
-                                    <option value="Black & White">Black & White</option>
-                                </select>
-                                <div class="input-group-append">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Add picture</label>
+                            <label for="exampleInputEmail1">Add picture link</label>
                             <input v-model="newProfile.image1" type="email" class="form-control" id="exampleInputEmail1"
                                    aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Add picture 2</label>
+                            <label for="exampleInputEmail1">Add picture 2 link</label>
                             <input v-model="newProfile.image2" type="email" class="form-control" id="exampleInputEmail1"
                                    aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Add picture 3</label>
+                            <label for="exampleInputEmail1">Add picture 3 link</label>
                             <input v-model="newProfile.image3" type="email" class="form-control" id="exampleInputEmail1"
                                    aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Add picture 4</label>
+                            <label for="exampleInputEmail1">Add picture 4 link</label>
                             <input v-model="newProfile.image4" type="email" class="form-control" id="exampleInputEmail1"
                                    aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">add a picture 5 link</label>
+                            <input v-model="newProfile.image5" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">add a picture 6 link</label>
+                            <input v-model="newProfile.image6" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal"
@@ -171,23 +162,33 @@
                                    id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">add a picture</label>
+                            <label for="exampleInputEmail1">add a picture link</label>
                             <input v-model="editingProfile.image1" type="email" class="form-control"
                                    id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">add a picture 2</label>
+                            <label for="exampleInputEmail1">add a picture 2 link</label>
                             <input v-model="editingProfile.image2" type="email" class="form-control"
                                    id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">add a picture 3</label>
+                            <label for="exampleInputEmail1">add a picture 3 link</label>
                             <input v-model="editingProfile.image3" type="email" class="form-control"
                                    id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">add a picture 4</label>
+                            <label for="exampleInputEmail1">add a picture 4 link</label>
                             <input v-model="editingProfile.image4" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">add a picture 5 link</label>
+                            <input v-model="editingProfile.image5" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">add a picture 6 link</label>
+                            <input v-model="editingProfile.image6" type="email" class="form-control"
                                    id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="modal-footer">
@@ -291,7 +292,6 @@
                 country: "",
                 biography: "",
                 camera: "",
-                category: "",
                 image1: "",
                 image2: "",
                 image3: "",
@@ -305,7 +305,6 @@
                 country: "",
                 biography: "",
                 camera: "",
-                category: "",
                 image1: "",
                 image2: "",
                 image3: "",
