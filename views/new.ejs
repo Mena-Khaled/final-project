@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style2.css">
+    <title>Create Your Own Portofolio!</title>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<header class="row">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+        <img class="img" src="https://i.imgur.com/9DhFy5T.png" alt="logo" height="30">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Collection</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0 mx-4">
+                <input class="form-control mr-sm-2 m-2" type="text" placeholder="Search for a photo"
+                       aria-label="Search">
+                <button class="btn btn-outline-light m-2 my-sm-0 " type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<div class="container mt-5" id="root">
+    <div class="row justify-content-center">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-lg btn-light" data-toggle="modal" data-target="#addModal">Make Your Own
+            Free Portofolio
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add portofolio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add Personal Picture link</label>
+                            <input v-model="newProfile.ppic" type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input v-model="newProfile.name" type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Country</label>
+                            <input v-model="newProfile.country" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Biography</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                </div>
+                                <textarea v-model="newProfile.biography" class="form-control"
+                                          aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Camera</label>
+                            <input v-model="newProfile.camera" type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Category</label>
+                            <div class="input-group mb-3">
+                                <select v-model="newProfile.category" class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Choose...</option>
+                                    <option value="People">People</option>
+                                    <option value="Places">Places</option>
+                                    <option value="Nature">Nature</option>
+                                    <option value="Animals">Animals</option>
+                                    <option value="Food">Food</option>
+                                    <option value="Fine Art">Fine Art</option>
+                                    <option value="Travel">Travel</option>
+                                    <option value="Fashion">Fashion</option>
+                                    <option value="Black & White">Black & White</option>
+                                </select>
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add picture</label>
+                            <input v-model="newProfile.image1" type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add picture 2</label>
+                            <input v-model="newProfile.image2" type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add picture 3</label>
+                            <input v-model="newProfile.image3" type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add picture 4</label>
+                            <input v-model="newProfile.image4" type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                    data-target="#exampleModal">Close
+                            </button>
+                            <button @click="addProfile" type="button" class="btn btn-primary" data-dismiss="modal"
+                                    id="button">create
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit portofolio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add Personal Picture link</label>
+                            <input v-model="editingProfile.ppic" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input v-model="editingProfile.name" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Country</label>
+                            <input v-model="editingProfile.country" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Camera</label>
+                            <input v-model="editingProfile.camera" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">add a picture</label>
+                            <input v-model="editingProfile.image1" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">add a picture 2</label>
+                            <input v-model="editingProfile.image2" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">add a picture 3</label>
+                            <input v-model="editingProfile.image3" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">add a picture 4</label>
+                            <input v-model="editingProfile.image4" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                    data-target="#exampleModal">Close
+                            </button>
+                            <button @click="editProfile" type="button" class="btn btn-primary" data-dismiss="modal">
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4>Portofolios informations :</h4>
+    <div class="row justify-content-center mt-5">
+        <div class="card">
+            <div class="card body p-0 table-responsive">
+                <table class="table">
+                    <thead class="thead-light">
+                    <tr>
+                        <th>Personal Picture</th>
+                        <th>Name</th>
+                        <th>Country</th>
+                        <th>Biography</th>
+                        <th>Camera</th>
+                        <th>pic 1</th>
+                        <th>pic 2</th>
+                        <th>pic 3</th>
+                        <th>pic 4</th>
+                        <th>pic 5</th>
+                        <th>pic 6</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-light" v-for="p in profiles">
+                        <td><a :href="p.ppic">here</a></td>
+                        <td>{{p.name}}</td>
+                        <td>{{p.country}}</td>
+                        <td>{{p.biography}}</td>
+                        <td>{{p.camera}}</td>
+                        <td><a :href="p.image1">here</a></td>
+                        <td><a :href="p.image2">here</a></td>
+                        <td><a :href="p.image3">here</a></td>
+                        <td><a :href="p.image4">here</a></td>
+                        <td><a :href="p.image5">here</a></td>
+                        <td><a :href="p.image6">here</a></td>
+                        <td>
+                            <button @click="openEditModal(p)" class="btn btn-join joinbtn btn-sm" data-toggle="modal"
+                                    data-target="#editModal">Edit
+                            </button>
+                            <button @click="removeProfile(p._id)" class="btn btn-login loginbtn btn-sm m-2">Remove
+                            </button>
+                            <button class="btn btn-light portobtn btn-sm" m-2><a
+                                        href="http://localhost:3000/yourprofile">See Portofolio</a></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div v-for="p in profiles" class="modal-dialog" role="document">
+                <div  class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 ">
+                                <h1>{{p.name}}</h1>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                    data-target="#exampleModal">Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5" v-for="p in profiles">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-lg btn-light mx-2" data-toggle="modal" data-target="#profile"
+                    @click="showProfile(p)">Show Profile
+            </button>
+        </div>
+    </div>
+    <footer class="blog-footer mt-5">
+        <p>Webite built for Codelab bootcamp by <a
+                    href="https://www.facebook.com/profile.php?id=100008491774271">@Mena</a>.</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    function getProfiles() {
+        axios.get('/api/profiles').then(function (response) {
+            app.profiles = response.data;
+        });
+    }
+    var app = new Vue({
+        el: "#root",
+        data: {
+            profiles: [],
+            newProfile: {
+                ppic: "",
+                name: "",
+                country: "",
+                biography: "",
+                camera: "",
+                category: "",
+                image1: "",
+                image2: "",
+                image3: "",
+                image4: "",
+                image5: "",
+                image6: ""
+            },
+            editingProfile: {
+                ppic: "",
+                name: "",
+                country: "",
+                biography: "",
+                camera: "",
+                category: "",
+                image1: "",
+                image2: "",
+                image3: "",
+                image4: "",
+                image5: "",
+                image6: ""
+            }
+        },
+        methods: {
+            openEditModal: function (p) {
+                this.editingProfile = p
+                $('#editModal').modal('show')
+            },
+            removeProfile: function (id) {
+                axios.delete('/api/profiles', {
+                    params: {
+                        id: id
+                    }
+                }).then(function (response) {
+                    if (response.data.isSuccess) {
+                        getProfiles()
+                    }
+                })
+            },
+            addProfile: function () {
+                axios.post('/api/profiles', {profile: this.newProfile}).then(function (response) {
+                    if (response.data.isSuccess) {
+                        getProfiles()
+                    }
+                    alert(response.data.message)
+                }).catch(function (error) {
+                    console.log("Error")
+                })
+            },
+            editProfile: function () {
+                axios.put('/api/profiles', {profile: this.editingProfile}).then(function (response) {
+                    if (response.data.isSuccess) {
+                        $('#editModal').modal('hide');
+                        getProfiles();
+                    }
+                })
+            },
+            showProfile: function (p) {
+                axios.get('/api/profiles').then(function (response) {
+                    app.profiles = response.data;
+                });
+            }
+        },
+        mounted: function () {
+            getProfiles()
+        },
+    });
+</script>
+</body>
+</html>
