@@ -4,78 +4,91 @@ a:focus,
 a:hover {
     color: black
 }
+
 /*
- * Base structure
- */
+* Base structure
+*/
 html,
 body {
     height: 100%;
 }
-body{
+
+body {
     background-image: url("cc.jpg");
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color:black;
+    background-color: black;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     color: black
 }
+
 .container {
-    padding-top:70px
+    padding-top: 70px
 }
+
 .cover-container {
     max-width: 42em;
 }
+
 h4 {
-    color:white;
+    color: white;
     font-style: italic;
-    margin-left:20px;
-    margin-top:25px
+    margin-left: 20px;
+    margin-top: 25px
 }
+
 nav {
-    font-size:15px;
+    font-size: 15px;
     background-color: rgb(0, 0, 0)
 }
 
 .joinbtn {
-    background-color:#ffe57d;
-    color:black;
-    border:none
+    background-color: #ffe57d;
+    color: black;
+    border: none
 }
+
 .btn-join:hover,
 .btn-join:focus {
     background-color: #ecaf06;
-    color:white;
-    border:none
+    color: white;
+    border: none
 }
+
 .loginbtn {
-    background-color:#ff8d4d;
-    color:black;
-    border:none
+    background-color: #ff8d4d;
+    color: black;
+    border: none
 }
+
 .btn-login:hover,
 .btn-login:focus {
     background-color: #cd5401;
-    color:white;
-    border:none
+    color: white;
+    border: none
 }
+
 .portobtn {
     background-color: #f7f4f3;
-    color:black;
+    color: black;
 }
+
 button a,
 button a:focus,
-button a:hover  {
+button a:hover {
     color: black;
     text-decoration: none;
 }
+
 footer {
-    text-align:center;
-    color:white;
-    padding-top:40px
+    text-align: center;
+    color: white;
+    padding-top: 113px
 }
+
 footer a {
-color:white;
+    color: white;
 }

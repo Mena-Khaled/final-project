@@ -1,268 +1,290 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <link rel="shortcut icon" href="favicon.ico">
-  <title>Captured Moments</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Captured Moments</title>
 </head>
-<body >
+<body>
 <div class="container" id="root">
-  <div class="cover-container h-100 p-3 mx-auto">
-    <header class="row">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
-        <img class="img" src="https://i.imgur.com/9DhFy5T.png" alt="logo" height="30" >
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Explore</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">Collection</a>
-            </li>
-          </ul>
-          <form class="form-inline mt-2 mt-md-0 mx-4">
-            <input class="form-control mr-sm-2 m-2" type="text" placeholder="Search for a photo" aria-label="Search">
-            <button class="btn btn-outline-light m-2 my-sm-0 " type="submit">Search</button>
-          </form>
+    <div class="cover-container h-100 p-3 mx-auto">
+        <header class="row">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+                <img class="img" src="https://i.imgur.com/9DhFy5T.png" alt="logo" height="30">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="#">About<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Collection</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0 mx-4">
+                        <input class="form-control mr-sm-2 m-2" type="text" placeholder="Search for a photo"
+                               aria-label="Search">
+                        <button class="btn btn-outline-light m-2 my-sm-0 " type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <div class="text-center row justify-content-center transbox lead">
+            <main>
+                <h1>Find your inspiration.</h1>
+                <h3>Discover newest pictures, and let the world see your own creative.</h3>
+                <p class="lead mt-3">
+                    <button class="btn btn-join joinbtn">Join</button>
+                    <button class="btn btn-login loginbtn m-1">Login</button>
+                    <br>
+                    <button class="btn btn-light portobtn m-1"><a href="http://localhost:3000/profiles" target="_blank">Create
+                            Your Free Portfolio!</a></button>
+                </p>
+            </main>
         </div>
-      </nav>
-    </header>
-<div class="text-center row justify-content-center transbox">
-  <main>
-    <h1>Find your inspiration.</h1>
-    <h3>Discover newest pictures, and let the world see your own creative.</h3>
-    <p class="lead mt-3">
-      <button class="btn btn-join joinbtn">Join</button>
-      <button class="btn btn-login loginbtn m-1">Login</button><br>
-      <button class="btn btn-light portobtn m-1"><a href="http://localhost:3000/profiles" target="_blank">Create Your Free Portofolio!</a></button>
-    </p>
-  </main>
-  </div>
+    </div>
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-people-tab" data-toggle="pill" href="#pills-people" role="tab"
+                       aria-controls="pills-people" aria-selected="true">People</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-places-tab" data-toggle="pill" href="#pills-places" role="tab"
+                       aria-controls="pills-places" aria-selected="false">Places</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-nature-tab" data-toggle="pill" href="#pills-nature" role="tab"
+                       aria-controls="pills-nature" aria-selected="false">Nature</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Fine Art</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Travel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Fashion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Black & White</a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-people" role="tabpanel"
+                     aria-labelledby="pills-people-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/05/ed/c0/05edc07a94c87227521e2f20402d9eb8.jpg">
+                                <img src="https://i.pinimg.com/564x/05/ed/c0/05edc07a94c87227521e2f20402d9eb8.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/90/ce/9a/90ce9a232a6cdc84af39cf05d2459522.jpg">
+                                <img src="https://i.pinimg.com/564x/90/ce/9a/90ce9a232a6cdc84af39cf05d2459522.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://mymodernmet.com/wp/wp-content/uploads/archive/vE9HGvfc18V6Wq2Gdbh1_1082135261.jpeg">
+                                <img src="https://mymodernmet.com/wp/wp-content/uploads/archive/vE9HGvfc18V6Wq2Gdbh1_1082135261.jpeg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="https://modaellos.com/wp-content/uploads/2014/12/como-vestirse-al-estilo-swag-chicos.jpg">
+                                <img src="https://modaellos.com/wp-content/uploads/2014/12/como-vestirse-al-estilo-swag-chicos.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/34/57/ad/3457adc5c1962433241ea202f221471e.jpg">
+                                <img src="https://i.pinimg.com/564x/34/57/ad/3457adc5c1962433241ea202f221471e.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/be/ae/ba/beaeba56eb6a5117c32774a430bbecab.jpg">
+                                <img src="https://i.pinimg.com/564x/be/ae/ba/beaeba56eb6a5117c32774a430bbecab.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/54/d6/82/54d68290549547f3193883e6a8992202.jpg">
+                                <img src="https://i.pinimg.com/564x/54/d6/82/54d68290549547f3193883e6a8992202.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/15/3f/3e/153f3ec993b50185535497998e710f81.jpg">
+                                <img src="https://i.pinimg.com/564x/15/3f/3e/153f3ec993b50185535497998e710f81.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/0e/ec/ac/0eecac0a2606dfa8450d0a7008fb130a.jpg">
+                                <img src="https://i.pinimg.com/564x/0e/ec/ac/0eecac0a2606dfa8450d0a7008fb130a.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="pills-places" role="tabpanel" aria-labelledby="pills-places-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/81/4a/dc/814adc99a894c2208e0532e3874ad3d0.jpg">
+                                <img src="https://i.pinimg.com/564x/81/4a/dc/814adc99a894c2208e0532e3874ad3d0.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/bb/09/90/bb09900b5d65a9c5b39b12018d183cce.jpg">
+                                <img src="https://i.pinimg.com/564x/bb/09/90/bb09900b5d65a9c5b39b12018d183cce.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/99/b7/cc/99b7ccc98681e47ad6aac79f7501983e.jpg">
+                                <img src="https://i.pinimg.com/564x/99/b7/cc/99b7ccc98681e47ad6aac79f7501983e.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/10/09/23/1009231408a538a1da901e9c22c0e5ca.jpg">
+                                <img src="https://i.pinimg.com/564x/10/09/23/1009231408a538a1da901e9c22c0e5ca.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/4b/62/14/4b62143a01b2c1fbe8e191d65951c6ef.jpg">
+                                <img src="https://i.pinimg.com/564x/4b/62/14/4b62143a01b2c1fbe8e191d65951c6ef.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/75/f5/8c/75f58c75637d2d541ac570c698aecdb5.jpg">
+                                <img src="https://i.pinimg.com/564x/75/f5/8c/75f58c75637d2d541ac570c698aecdb5.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/34/02/99/340299652854f4c40e0aed16db7d1821.jpg">
+                                <img src="https://i.pinimg.com/564x/34/02/99/340299652854f4c40e0aed16db7d1821.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/37/65/f1/3765f13b3dd1c688dac96d618b368f50.jpg">
+                                <img src="https://i.pinimg.com/564x/37/65/f1/3765f13b3dd1c688dac96d618b368f50.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/a5/1e/d4/a51ed4644fb538d1dd0b12265a5a6d9c.jpg">
+                                <img src="https://i.pinimg.com/564x/a5/1e/d4/a51ed4644fb538d1dd0b12265a5a6d9c.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="pills-nature" role="tabpanel" aria-labelledby="pills-nature-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/c7/fa/b0/c7fab0a7047e21558e1fd2acddcd883d.jpg">
+                                <img src="https://i.pinimg.com/564x/c7/fa/b0/c7fab0a7047e21558e1fd2acddcd883d.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/c8/45/d8/c845d8ddcbccf0c874eff927b4d754fe.jpg">
+                                <img src="https://i.pinimg.com/564x/c8/45/d8/c845d8ddcbccf0c874eff927b4d754fe.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/2e/df/3a/2edf3a17c99f9987381d5eab873f499a.jpg">
+                                <img src="https://i.pinimg.com/564x/2e/df/3a/2edf3a17c99f9987381d5eab873f499a.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/be/22/81/be22814400ad789085f8cdcff6f06861.jpg">
+                                <img src="https://i.pinimg.com/564x/e9/24/9c/e9249c9d7983f319574787eb4821d38c.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/ba/bb/c6/babbc69a61d2f4f1dfe63e81864ae5bc.jpg">
+                                <img src="https://i.pinimg.com/564x/ba/bb/c6/babbc69a61d2f4f1dfe63e81864ae5bc.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/de/90/e4/de90e483a95d81dd03cf6e4f617251b7.jpg">
+                                <img src="https://i.pinimg.com/564x/de/90/e4/de90e483a95d81dd03cf6e4f617251b7.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/b7/de/90/b7de9082bb018e3c6e08d1166f44e0b6.jpg">
+                                <img src="https://i.pinimg.com/564x/b7/de/90/b7de9082bb018e3c6e08d1166f44e0b6.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/7b/25/8e/7b258e2634f89d63c5aa83ee1e57d8d9.jpg">
+                                <img src="https://i.pinimg.com/564x/7b/25/8e/7b258e2634f89d63c5aa83ee1e57d8d9.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://i.pinimg.com/564x/26/6e/28/266e28c4072fa9ff88d457c9a31a94b5.jpg">
+                                <img src="https://i.pinimg.com/564x/26/6e/28/266e28c4072fa9ff88d457c9a31a94b5.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="blog-footer m-5">
+                <p>Webite built for Codelab bootcamp by <a
+                            href="https://www.facebook.com/profile.php?id=100008491774271">@Mena</a>.</p>
+                <p>
+                    <a href="#">Back to top</a>
+                </p>
+            </footer>
+        </div>
+    </div>
 </div>
-  <div class="container mt-5 pt-5">
-  <div class="row justify-content-center">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="pills-people-tab" data-toggle="pill" href="#pills-people" role="tab" aria-controls="pills-people" aria-selected="true">People</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-places-tab" data-toggle="pill" href="#pills-places" role="tab" aria-controls="pills-places" aria-selected="false">Places</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-nature-tab" data-toggle="pill" href="#pills-nature" role="tab" aria-controls="pills-nature" aria-selected="false">Nature</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Animals</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Food</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Fine Art</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Travel</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Fashion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Black & White</a>
-        </li>
-      </ul>
-
-
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-people" role="tabpanel" aria-labelledby="pills-people-tab">
-          <div class="row">
-            <div class="col-md-4">
-                <a href="https://i.pinimg.com/564x/05/ed/c0/05edc07a94c87227521e2f20402d9eb8.jpg" >
-                  <img src="https://i.pinimg.com/564x/05/ed/c0/05edc07a94c87227521e2f20402d9eb8.jpg" >
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="https://i.pinimg.com/564x/90/ce/9a/90ce9a232a6cdc84af39cf05d2459522.jpg" >
-                  <img src="https://i.pinimg.com/564x/90/ce/9a/90ce9a232a6cdc84af39cf05d2459522.jpg" >
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="https://mymodernmet.com/wp/wp-content/uploads/archive/vE9HGvfc18V6Wq2Gdbh1_1082135261.jpeg">
-                  <img src="https://mymodernmet.com/wp/wp-content/uploads/archive/vE9HGvfc18V6Wq2Gdbh1_1082135261.jpeg">
-                </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <a href="https://modaellos.com/wp-content/uploads/2014/12/como-vestirse-al-estilo-swag-chicos.jpg" >
-                <img src="https://modaellos.com/wp-content/uploads/2014/12/como-vestirse-al-estilo-swag-chicos.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/34/57/ad/3457adc5c1962433241ea202f221471e.jpg" >
-                <img src="https://i.pinimg.com/564x/34/57/ad/3457adc5c1962433241ea202f221471e.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/be/ae/ba/beaeba56eb6a5117c32774a430bbecab.jpg">
-                <img src="https://i.pinimg.com/564x/be/ae/ba/beaeba56eb6a5117c32774a430bbecab.jpg">
-              </a>
-            </div>
-          </div>
-            <div class="row ">
-              <div class="col-md-4">
-                <a href="https://i.pinimg.com/564x/54/d6/82/54d68290549547f3193883e6a8992202.jpg" >
-                  <img src="https://i.pinimg.com/564x/54/d6/82/54d68290549547f3193883e6a8992202.jpg" >
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="https://i.pinimg.com/564x/15/3f/3e/153f3ec993b50185535497998e710f81.jpg" >
-                  <img src="https://i.pinimg.com/564x/15/3f/3e/153f3ec993b50185535497998e710f81.jpg" >
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="https://i.pinimg.com/564x/0e/ec/ac/0eecac0a2606dfa8450d0a7008fb130a.jpg">
-                  <img src="https://i.pinimg.com/564x/0e/ec/ac/0eecac0a2606dfa8450d0a7008fb130a.jpg">
-                </a>
-              </div>
-          </div>
-        </div>
-
-
-        <div class="tab-pane fade" id="pills-places" role="tabpanel" aria-labelledby="pills-places-tab">
-          <div class="row">
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/81/4a/dc/814adc99a894c2208e0532e3874ad3d0.jpg" >
-                <img src="https://i.pinimg.com/564x/81/4a/dc/814adc99a894c2208e0532e3874ad3d0.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/bb/09/90/bb09900b5d65a9c5b39b12018d183cce.jpg" >
-                <img src="https://i.pinimg.com/564x/bb/09/90/bb09900b5d65a9c5b39b12018d183cce.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/99/b7/cc/99b7ccc98681e47ad6aac79f7501983e.jpg">
-                <img src="https://i.pinimg.com/564x/99/b7/cc/99b7ccc98681e47ad6aac79f7501983e.jpg">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/10/09/23/1009231408a538a1da901e9c22c0e5ca.jpg" >
-                <img src="https://i.pinimg.com/564x/10/09/23/1009231408a538a1da901e9c22c0e5ca.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/4b/62/14/4b62143a01b2c1fbe8e191d65951c6ef.jpg" >
-                <img src="https://i.pinimg.com/564x/4b/62/14/4b62143a01b2c1fbe8e191d65951c6ef.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/75/f5/8c/75f58c75637d2d541ac570c698aecdb5.jpg">
-                <img src="https://i.pinimg.com/564x/75/f5/8c/75f58c75637d2d541ac570c698aecdb5.jpg">
-              </a>
-            </div>
-          </div>
-          <div class="row ">
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/34/02/99/340299652854f4c40e0aed16db7d1821.jpg" >
-                <img src="https://i.pinimg.com/564x/34/02/99/340299652854f4c40e0aed16db7d1821.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/37/65/f1/3765f13b3dd1c688dac96d618b368f50.jpg" >
-                <img src="https://i.pinimg.com/564x/37/65/f1/3765f13b3dd1c688dac96d618b368f50.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/a5/1e/d4/a51ed4644fb538d1dd0b12265a5a6d9c.jpg">
-                <img src="https://i.pinimg.com/564x/a5/1e/d4/a51ed4644fb538d1dd0b12265a5a6d9c.jpg">
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="tab-pane fade" id="pills-nature" role="tabpanel" aria-labelledby="pills-nature-tab">
-          <div class="row">
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/c7/fa/b0/c7fab0a7047e21558e1fd2acddcd883d.jpg" >
-                <img src="https://i.pinimg.com/564x/c7/fa/b0/c7fab0a7047e21558e1fd2acddcd883d.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/c8/45/d8/c845d8ddcbccf0c874eff927b4d754fe.jpg" >
-                <img src="https://i.pinimg.com/564x/c8/45/d8/c845d8ddcbccf0c874eff927b4d754fe.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/2e/df/3a/2edf3a17c99f9987381d5eab873f499a.jpg">
-                <img src="https://i.pinimg.com/564x/2e/df/3a/2edf3a17c99f9987381d5eab873f499a.jpg">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/be/22/81/be22814400ad789085f8cdcff6f06861.jpg" >
-                <img src="https://i.pinimg.com/564x/e9/24/9c/e9249c9d7983f319574787eb4821d38c.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/ba/bb/c6/babbc69a61d2f4f1dfe63e81864ae5bc.jpg" >
-                <img src="https://i.pinimg.com/564x/ba/bb/c6/babbc69a61d2f4f1dfe63e81864ae5bc.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/de/90/e4/de90e483a95d81dd03cf6e4f617251b7.jpg">
-                <img src="https://i.pinimg.com/564x/de/90/e4/de90e483a95d81dd03cf6e4f617251b7.jpg">
-              </a>
-            </div>
-          </div>
-          <div class="row ">
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/b7/de/90/b7de9082bb018e3c6e08d1166f44e0b6.jpg" >
-                <img src="https://i.pinimg.com/564x/b7/de/90/b7de9082bb018e3c6e08d1166f44e0b6.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/7b/25/8e/7b258e2634f89d63c5aa83ee1e57d8d9.jpg" >
-                <img src="https://i.pinimg.com/564x/7b/25/8e/7b258e2634f89d63c5aa83ee1e57d8d9.jpg" >
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://i.pinimg.com/564x/26/6e/28/266e28c4072fa9ff88d457c9a31a94b5.jpg">
-                <img src="https://i.pinimg.com/564x/26/6e/28/266e28c4072fa9ff88d457c9a31a94b5.jpg">
-              </a>
-            </div>
-          </div>
-        </div>
-        </div>
-    <footer class="blog-footer m-5">
-      <p>Webite built for Codelab bootcamp by <a href="https://www.facebook.com/profile.php?id=100008491774271">@Mena</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
-      </div>
-      </div>
-  </div>
 </div>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>
